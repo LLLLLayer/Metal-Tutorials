@@ -12,5 +12,5 @@
   * [什么是帧(Frames)？](beginning-metal/1.1-hello-metal/what-is-a-frame.md)
   * [你的第一个 Metal 应用](beginning-metal/1.1-hello-metal/your-first-metal-app/README.md)
     * [开始](beginning-metal/1.1-hello-metal/your-first-metal-app/getting-started.md)
-    * [Metal View](beginning-metal/1.1-hello-metal/your-first-metal-app/the-metal-view.md)
-    * [Model](beginning-metal/1.1-hello-metal/your-first-metal-app/the\_model.md)
+    * [Metal 视图](beginning-metal/1.1-hello-metal/your-first-metal-app/the-metal-view.md)
+    * [渲染](beginning-metal/1.1-hello-metal/your-first-metal-app/rendering.md)
