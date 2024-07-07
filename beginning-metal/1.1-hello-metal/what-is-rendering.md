@@ -14,7 +14,7 @@
 
 以下渲染使用 3D 火车模型和一些不同的着色技术，使火车看起来像是用闪亮的铜制成的：
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 从导入模型顶点到在屏幕上生成最终图像的整个过程通常称为渲染管道(Rendering Pipeline)。渲染管道是发送到 GPU 的命令列表，以及构成最终图像的资源(顶点、材质(Materials)和灯光(Lights))。
 
