@@ -70,7 +70,7 @@ let mesh = try MTKMesh(mesh: mdlMesh, device: device)
 
 每个帧都包含你发送给 GPU 的命令。你将这些命令包装在渲染命令编码器(Render Command Encoder)中。命令缓冲区(Command Buffer)组织这些命令编码器，命令队列(Command Queue)组织命令缓冲区。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ➤ 添加此代码以创建命令队列：
 
@@ -86,7 +86,7 @@ guard let commandQueue = device.makeCommandQueue() else {
 
 在每一帧上，你将创建一个命令缓冲区和至少一个描述渲染过程的渲染命令编码器。渲染命令编码器是一个轻量级对象，它设置 GPU 的管道状态并告诉 GPU 在渲染过程中要使用哪些缓冲区。
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 着色器函数
 

@@ -53,4 +53,70 @@ renderEncoder.setVertexBuffer(
     mesh.vertexBuffers[0].buffer, offset: 0, index: 0)
 ```
 
-偏移量是缓冲区中顶点信息的起始位置。索引是 GPU 顶点着色器函数定位此缓冲区的方式。
+`offset` 偏移量是缓冲区中顶点信息的起始位置。`index` 索引是 GPU 顶点着色器函数定位此缓冲区的方式。
+
+### 子网格(Submeshes)
+
+网格由子网格组成。当艺术家创建 3D 模型时，他们会使用不同的材质组来设计它们。这些材质组会转换为子网格。例如，如果你正在渲染汽车对象，则可能会有一个闪亮的车身和橡胶轮胎。一种材质是闪亮的油漆，另一种是橡胶。导入时，Model I/O 会创建两个不同的子网格，它们会索引到该组的正确顶点。一个顶点可以由不同的子网格多次渲染。这个球体只有一个子网格，因此你只会使用一个。
+
+➤ 添加此代码：
+
+```swift
+guard let submesh = mesh.submeshes.first else {
+    fatalError()
+}
+```
+
+现在到了激动人心的部分：绘图！你可以使用绘制调用在 Metal 中绘图。
+
+➤ 添加以下代码：
+
+```swift
+renderEncoder.drawIndexedPrimitives(
+    type: .triangle,
+    indexCount: submesh.indexCount,
+    indexType: submesh.indexType,
+    indexBuffer: submesh.indexBuffer.buffer,
+    indexBufferOffset: 0)
+```
+
+在这里，你指示 GPU 渲染由三角形组成的顶点缓冲区，其中顶点按照子网格索引信息以正确的顺序排列。此代码不会执行实际渲染 — 直到 GPU 收到所有命令缓冲区的命令后才会发生。
+
+➤ 要完成向渲染命令编码器发送命令并完成帧，请添加此代码：
+
+```swift
+// 1
+renderEncoder.endEncoding()
+// 2
+guard let drawable = view.currentDrawable else {
+  fatalError()
+}
+// 3
+commandBuffer.present(drawable)
+commandBuffer.commit()
+```
+
+浏览代码：
+
+1. 告诉渲染编码器不再有绘制调用并结束渲染过程。
+2. 从 MTKView 获取可绘制对象。MTKView 由 Core Animation CAMetalLayer 支持，该层拥有 Metal 可以读取和写入的可绘制纹理。
+3. 要求命令缓冲区显示 MTKView 的可绘制对象并提交给 GPU。
+
+➤ 最后，将此代码添加到 Playground 的末尾：&#x20;
+
+```swift
+PlaygroundPage.current.liveView = view
+```
+
+使用该代码行，您将能够在 Assistant 编辑器中看到 Metal 视图。
+
+➤ 运行 Playground，在 Playground 的实时视图中，您将看到奶油色背景上的红色球体。
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+> 注意：有时 Playground 无法按时编译或运行。如果您确定代码编写正确，请重新启动 Xcode 并重新加载 Playground。等待一两秒钟后再运行。
+
+恭喜！你已经编写了第一个 Metal 应用，并且还使用了许多 Metal API 命令，这些命令将在你编写的每个 Metal 应用中使用。
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+

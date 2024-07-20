@@ -14,3 +14,5 @@
     * [开始](beginning-metal/1.1-hello-metal/your-first-metal-app/getting-started.md)
     * [Metal 视图](beginning-metal/1.1-hello-metal/your-first-metal-app/the-metal-view.md)
     * [渲染](beginning-metal/1.1-hello-metal/your-first-metal-app/rendering.md)
+  * [挑战](beginning-metal/1.1-hello-metal/tiao-zhan.md)
+  * [关键点](beginning-metal/1.1-hello-metal/guan-jian-dian.md)
