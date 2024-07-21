@@ -2,7 +2,7 @@
 
 ➤ 在 Finder 中，导航至 Documents ▸ Shared Playground Data。
 
-在这里，您将找到导出的文件 primitive.usda。
+在这里，你将找到导出的文件 primitive.usda。
 
 ➤ 使用纯文本编辑器打开 primitive.usda。
 

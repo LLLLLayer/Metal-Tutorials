@@ -10,7 +10,7 @@
 4. 按 X 删除立方体。
 5. 左键单击光标下方菜单中的删除以确认删除。
 
-现在您有一个清晰且可导入的 Blender 文件，让我们开始吧。
+现在你有一个清晰且可导入的 Blender 文件，让我们开始吧。
 
 ➤ 选择 File ▸ Import ▸ Universal Scene Description (.usd\*)，然后从 Documents ▸ Shared Playground Data，Playground 目录中选择 primitive.usda。圆锥体导入 Blender。
 

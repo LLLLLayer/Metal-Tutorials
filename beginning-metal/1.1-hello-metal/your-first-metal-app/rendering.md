@@ -108,13 +108,13 @@ commandBuffer.commit()
 PlaygroundPage.current.liveView = view
 ```
 
-使用该代码行，您将能够在 Assistant 编辑器中看到 Metal 视图。
+使用该代码行，你将能够在 Assistant 编辑器中看到 Metal 视图。
 
-➤ 运行 Playground，在 Playground 的实时视图中，您将看到奶油色背景上的红色球体。
+➤ 运行 Playground，在 Playground 的实时视图中，你将看到奶油色背景上的红色球体。
 
 <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-> 注意：有时 Playground 无法按时编译或运行。如果您确定代码编写正确，请重新启动 Xcode 并重新加载 Playground。等待一两秒钟后再运行。
+> 注意：有时 Playground 无法按时编译或运行。如果你确定代码编写正确，请重新启动 Xcode 并重新加载 Playground。等待一两秒钟后再运行。
 
 恭喜！你已经编写了第一个 Metal 应用，并且还使用了许多 Metal API 命令，这些命令将在你编写的每个 Metal 应用中使用。
 

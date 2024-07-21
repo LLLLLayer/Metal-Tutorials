@@ -1,6 +1,8 @@
 # 导出到 Blender
 
-现在您已将 Blender 全部设置好，是时候将模型从你的 Playground 导出到 Blender 了。 ➤ 仍在“渲染和导出 3D 模型”中，在你创建网格的 Playground 顶部附近，将：
+现在你已将 Blender 全部设置好，是时候将模型从你的 Playground 导出到 Blender 了。&#x20;
+
+➤ 仍在“Render and Export 3D Model”中，在你创建网格的 Playground 顶部附近，将：
 
 ```swift
 let mdlMesh = MDLMesh(
@@ -23,7 +25,7 @@ let mdlMesh = MDLMesh(
     allocator: allocator)
 ```
 
-➤ 此代码将生成一个原始锥体网格来代替球体。运行 Playground，您将看到线框锥体。
+➤ 此代码将生成一个原始锥体网格来代替球体。运行 Playground，你将看到线框锥体。
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 

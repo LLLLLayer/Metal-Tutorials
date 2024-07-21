@@ -52,7 +52,7 @@ GPU 属于 Flynn 分类法中称为单指令多数据 (SIMD) 的特殊计算类�
 
 ## 本书目标读者
 
-本书适合有兴趣学习 3D 图形或深入了解游戏引擎工作原理的中级 Swift 开发人员。如果你不了解 Swift，你仍然可以继续学习，因为所有代码说明都包含在书中。你将获得一般的图形知识，但如果您你了解 Swift 基础知识，就不会那么困惑。我们推荐[《Swift Apprentice：Fundamentals》](https://www.kodeco.com/books/swift-apprentice-fundamentals)一书。
+本书适合有兴趣学习 3D 图形或深入了解游戏引擎工作原理的中级 Swift 开发人员。如果你不了解 Swift，你仍然可以继续学习，因为所有代码说明都包含在书中。你将获得一般的图形知识，但如果你你了解 Swift 基础知识，就不会那么困惑。我们推荐[《Swift Apprentice：Fundamentals》](https://www.kodeco.com/books/swift-apprentice-fundamentals)一书。
 
 掌握一些 C++ 知识也会很有用。编写 GPU 着色器函数时使用的 MSL 基于 C++。同样，你需要的所有代码都包含在书中。
 

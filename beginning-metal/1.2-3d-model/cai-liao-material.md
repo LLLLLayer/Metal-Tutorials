@@ -18,7 +18,7 @@
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-与纯灰色的锥体不同，火车模型有几种颜色。这些颜色在 material groups 中定义 - 每种颜色一个。在 Blender 屏幕的右侧，您将看到“属性”面板，其中已选择Material context(即垂直图标列表底部的图标)，顶部是此模型中的材质列表。
+与纯灰色的锥体不同，火车模型有几种颜色。这些颜色在 Material groups 中定义 - 每种颜色一个。在 Blender 屏幕的右侧，你将看到“属性”面板，其中已选择 Material context (即垂直图标列表底部的图标)，顶部是此模型中的材质列表。
 
 ➤ 选择 Body，然后单击材质列表下方的 Select。
 
@@ -28,15 +28,15 @@
 
 
 
-请注意顶点是如何分成不同组或材质的。这种分离使得在 Blender 中选择各个部分更加容易，并且还使您能够分配不同的颜色。
+请注意顶点是如何分成不同组或材质的。这种分离使得在 Blender 中选择各个部分更加容易，并且还使你能够分配不同的颜色。
 
 > 注意：将此模型渲染到你的 Playground 时，渲染器将渲染每个材质组，但你的 Metal 着色器不会渲染正确的颜色。验证模型外观的一种方法是在 Blender 中查看它。
 
-➤ 返回 Xcode，从项目导航器中打开 Import Train  Playground 页面。此游乐场渲染(但不导出)线框锥体。
+➤ 返回 Xcode，从项目导航器中打开 Import Train  Playground 页面。此 Playground 渲染(但不导出)线框锥体。
 
 ➤ 在 Playground 的资源文件夹中，找到并检查 train.usdz 模型。在窗口上拖动以围绕模型移动视图相机。
 
-注意：Playground 资源文件夹中的文件可用于所有 Playground 页面。每个页面的资源文件夹中的文件仅适用于该页面。
+> 注意：Playground 资源文件夹中的文件可用于所有 Playground 页面。每个页面的资源文件夹中的文件仅适用于该页面。
 
 ➤ 在 Import Train 中，删除创建 MDLMesh 锥体的行：&#x20;
 
