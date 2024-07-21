@@ -25,7 +25,7 @@ let mdlMesh = MDLMesh(
 
 ➤ 此代码将生成一个原始锥体网格来代替球体。运行 Playground，您将看到线框锥体。
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 这是你将使用 Model I/O 导出的模型。
 

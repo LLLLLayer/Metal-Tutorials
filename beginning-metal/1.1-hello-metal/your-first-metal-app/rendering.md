@@ -112,7 +112,7 @@ PlaygroundPage.current.liveView = view
 
 ➤ 运行 Playground，在 Playground 的实时视图中，您将看到奶油色背景上的红色球体。
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 > 注意：有时 Playground 无法按时编译或运行。如果您确定代码编写正确，请重新启动 Xcode 并重新加载 Playground。等待一两秒钟后再运行。
 
