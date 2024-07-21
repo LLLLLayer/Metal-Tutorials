@@ -20,7 +20,7 @@ PlaygroundSupport 可让我们在 Assistant Editor 中查看实时视图，而 M
 ```swift
 guard let device = MTLCreateSystemDefaultDevice() else { 
     fatalError("GPU is not support") 
-} 
+}
 ```
 
 此代码通过创建设备来检查合适的 GPU：
@@ -82,7 +82,7 @@ guard let commandQueue = device.makeCommandQueue() else {
 
 你应该在应用程序开始时设置设备和命令队列，并且通常应该始终使用相同的设备和命令队列。
 
-每个渲染过程都必须尽快完成，因此你将在应用程序开始时预加载对象。你将模型加载到缓冲区中，生成着色器函数并创建管道状态对象。
+每个渲染过程都必须尽快完成，因此你将在应用程序开始时预加载对象。你将模型加载到缓冲区中，生成着色器函数并创建管道状态对象(Pipeline state objects)。
 
 在每一帧上，你将创建一个命令缓冲区和至少一个描述渲染过程的渲染命令编码器。渲染命令编码器是一个轻量级对象，它设置 GPU 的管道状态并告诉 GPU 在渲染过程中要使用哪些缓冲区。
 
@@ -144,10 +144,9 @@ pipelineDescriptor.fragmentFunction = fragmentFunction
 
 ➤ 添加此代码：
 
-```swift
-pipelineDescriptor.vertexDescriptor =
-    MTKMetalVertexDescriptorFromModelIO(mesh.vertexDescriptor)
-```
+<pre class="language-swift"><code class="lang-swift"><strong>pipelineDescriptor.vertexDescriptor =
+</strong>    MTKMetalVertexDescriptorFromModelIO(mesh.vertexDescriptor)
+</code></pre>
 
 现在，你已使用必要信息设置了管道描述符。`MTLRenderPipelineDescriptor` 有许多其他属性，但目前，你将使用默认值。
 
