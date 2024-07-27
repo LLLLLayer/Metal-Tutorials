@@ -10,7 +10,7 @@
 
 第二个渲染通道将以全彩色渲染模型。然后，你可以将阴影和颜色纹理组合起来，以生成最终输出到屏幕的纹理。
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 在本书的第一部分，你将使用单次渲染过程。稍后，你将了解多次渲染。方便的是，`MTKView` 提供了一个渲染过程描述符，它将保存一个称为可绘制对象(Drawable)的纹理。
 
@@ -118,5 +118,5 @@ PlaygroundPage.current.liveView = view
 
 恭喜！你已经编写了第一个 Metal 应用，并且还使用了许多 Metal API 命令，这些命令将在你编写的每个 Metal 应用中使用。
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

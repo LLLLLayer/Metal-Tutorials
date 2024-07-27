@@ -16,7 +16,7 @@
 
 ➤ 左键单击模型以选择它，然后按 Tab 进入编辑模式。
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 与纯灰色的锥体不同，火车模型有几种颜色。这些颜色在 Material groups 中定义 - 每种颜色一个。在 Blender 屏幕的右侧，你将看到“属性”面板，其中已选择 Material context (即垂直图标列表底部的图标)，顶部是此模型中的材质列表。
 
@@ -24,7 +24,7 @@
 
 分配给此材质的顶点现在为橙色。
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

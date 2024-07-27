@@ -14,11 +14,11 @@
 
 ➤ 选择 File ▸ Import ▸ Universal Scene Description (.usd\*)，然后从 Documents ▸ Shared Playground Data，Playground 目录中选择 primitive.usda。圆锥体导入 Blender。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ➤ 左键单击圆锥体将其选中，然后按 Tab 键将 Blender 置于编辑模式。编辑模式允许你查看组成圆锥体的顶点和三角形。这些与你的线框渲染相匹配。
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 在编辑模式下，你可以移动顶点并添加新顶点以创建你能想到的任何 3D 模型。
 

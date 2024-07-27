@@ -4,7 +4,7 @@
 
 无论你的应用大小和复杂程度如何，Metal 渲染的过程都大体相同，你将非常熟悉在屏幕上绘制模型的以下顺序：
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 你最初可能会对 Metal 所需的步骤数量感到有些不知所措，但不用担心。你将始终按照相同的顺序执行这些步骤，它们将逐渐成为你的第二天性。
 
