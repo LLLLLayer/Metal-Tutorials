@@ -69,7 +69,7 @@ let mdlMesh =
 
 ➤ 运行 Playground 以查看火车的线框。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 嗯，这不太好。火车车轮离地面太高了。另外，火车的其余部分也丢失了！是时候解决这些问题了，从火车的车轮开始。
 

@@ -44,3 +44,8 @@
     * [2 - 顶点处理](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/2-ding-dian-chu-li/README.md)
       * [创建顶点着色器(Vertex Shader)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/2-ding-dian-chu-li/chuang-jian-ding-dian-zhuo-se-qi-vertex-shader.md)
     * [3 - 图元组装(Primitive Assembly)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/3-tu-yuan-zu-zhuang-primitive-assembly.md)
+    * [4 - 光栅化(Rasterization)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/4-guang-shan-hua-rasterization.md)
+    * [5 - 片段处理(Fragment Processing)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/5-pian-duan-chu-li-fragment-processing.md)
+    * [6 - 帧缓冲区(Framebuffer)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/6-zhen-huan-chong-qu-framebuffer.md)
+* [挑战](beginning-metal/tiao-zhan.md)
+* [关键点](beginning-metal/guan-jian-dian.md)
