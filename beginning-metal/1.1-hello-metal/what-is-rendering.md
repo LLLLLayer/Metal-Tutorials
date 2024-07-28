@@ -6,7 +6,7 @@
 
 渲染 3D 图像的方法有很多，但大多数都是从在 Blender 或 Maya 等建模应用程序中构建的模型开始的。例如，这个在 Blender 中构建的火车模型：
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_1_rendering_train.png" alt="" width="375"><figcaption></figcaption></figure>
 
 与所有其他模型一样，此模型由顶点(Vertices)组成。顶点是指三维空间中两个或多个直线、曲线或几何形状的边缘相交的点，例如立方体的角。模型中的顶点数量可能从立方体中的几个到更复杂模型中的数千甚至数百万不等。
 
@@ -14,7 +14,7 @@
 
 以下渲染使用 3D 火车模型和一些不同的着色技术，使火车看起来像是用闪亮的铜制成的：
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_1_rendering_train_cu.png" alt="" width="375"><figcaption></figcaption></figure>
 
 从导入模型顶点到在屏幕上生成最终图像的整个过程通常称为渲染管道(Rendering Pipeline)。渲染管道是发送到 GPU 的命令列表(Commands list)，以及构成最终图像的资源(顶点、材质(Materials)和灯光(Lights))。
 
