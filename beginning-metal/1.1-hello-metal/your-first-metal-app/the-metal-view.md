@@ -25,7 +25,7 @@ guard let device = MTLCreateSystemDefaultDevice() else {
 
 此代码通过创建设备来检查合适的 GPU：
 
-> 注意：你遇到错误了吗？如果你不小心创建了 iOS 游乐场而不是 macOS 游乐场，你将收到 `fatalError`，因为某些设备不支持 iOS 模拟器。
+> 注意：你遇到错误了吗？如果你不小心创建了 iOS Playground 而不是 macOS Playground，你将收到 `fatalError`，某些设备不支持 iOS 模拟器。
 
 要设置视图，请添加以下内容：&#x20;
 
@@ -42,7 +42,7 @@ view.clearColor
 
 Model I/O 是一个与 Metal 和 SceneKit 集成的框架。其主要目的是加载在 Blender 或 Maya 等应用中创建的 3D 模型，并设置数据缓冲区以便于渲染。
 
-你无需加载 3D 模型，而是加载 Model I/O 基本 3D 形状（也称为图元）。3D 图元通常是立方体、球体、圆柱体或圆环。
+你无需加载 3D 模型，而是加载 Model I/O 基本 3D 形状(图元，primitive)。3D 图元通常是立方体、球体、圆柱体或圆环。
 
 ➤ 将此代码添加到 Playground 的末尾：
 
@@ -88,7 +88,7 @@ guard let commandQueue = device.makeCommandQueue() else {
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 着色器函数
+### 着色器函数(Shader Functions)
 
 着色器函数是在 GPU 上运行的小程序。你可以使用 MSL (C++ 的一个子集)编写这些程序。通常，你会专门为着色器函数创建一个带有 .metal 扩展名的单独文件，现在，可哟创建一个包含着色器函数代码的多行字符串，并将其添加到你的 Playground 中：
 

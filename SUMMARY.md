@@ -8,8 +8,8 @@
 ## 一、开始使用 Metal <a href="#beginning-metal" id="beginning-metal"></a>
 
 * [1.1 Hello, Metal!](beginning-metal/1.1-hello-metal.md)
-  * [什么是渲染(Rendering)？](beginning-metal/1.1-hello-metal/what-is-rendering.md)
-  * [什么是帧(Frames)？](beginning-metal/1.1-hello-metal/what-is-a-frame.md)
+  * [什么是渲染(Rendering)](beginning-metal/1.1-hello-metal/what-is-rendering.md)
+  * [什么是帧(Frames)](beginning-metal/1.1-hello-metal/what-is-a-frame.md)
   * [你的第一个 Metal 应用](beginning-metal/1.1-hello-metal/your-first-metal-app/README.md)
     * [开始](beginning-metal/1.1-hello-metal/your-first-metal-app/getting-started.md)
     * [Metal 视图](beginning-metal/1.1-hello-metal/your-first-metal-app/the-metal-view.md)
@@ -47,5 +47,5 @@
     * [4 - 光栅化(Rasterization)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/4-guang-shan-hua-rasterization.md)
     * [5 - 片段处理(Fragment Processing)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/5-pian-duan-chu-li-fragment-processing.md)
     * [6 - 帧缓冲区(Framebuffer)](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/xuan-ran-guan-dao/6-zhen-huan-chong-qu-framebuffer.md)
-* [挑战](beginning-metal/tiao-zhan.md)
-* [关键点](beginning-metal/guan-jian-dian.md)
+  * [挑战](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/tiao-zhan.md)
+  * [关键点](beginning-metal/1.3-xuan-ran-guan-dao-rendering-pipeline/guan-jian-dian.md)
