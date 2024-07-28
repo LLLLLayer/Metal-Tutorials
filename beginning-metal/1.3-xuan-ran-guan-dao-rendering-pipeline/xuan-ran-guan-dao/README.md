@@ -2,7 +2,7 @@
 
 你准备好研究 GPU 管道了吗？太好了，让我们开始吧！在下图中，你可以看到管道的各个阶段。
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_rendering_pipeline.png" alt=""><figcaption></figcaption></figure>
 
 图形管道将顶点带入多个阶段，在此期间顶点的坐标在不同空间之间转换。
 

@@ -6,7 +6,7 @@
 
 看看这个 AMD GPU 架构图：
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1_3_amd_gpu.png" alt=""><figcaption></figcaption></figure>
 
 从上到下，GPU 具有：
 
@@ -21,7 +21,7 @@
 
 该特定的 GPU 型号有 6 个 USC，每个 USC 有 32 个核心，总​​共只有 192 个核心。
 
-<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1_3_amd_gpu_2.png" alt=""><figcaption></figcaption></figure>
 
 > 注意：iPhone X 拥有第一款完全由 Apple 内部设计的移动 GPU。Apple 迄今为止尚未公开任何 GPU 硬件规格。
 

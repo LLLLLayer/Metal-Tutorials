@@ -16,7 +16,7 @@ MetalKit 框架包含一个 `MTKView`，这是一个特殊的 Metal 渲染视图
 
 ➤ 将此文件拖到你的项目中，确保选中所有复选框，以便你复制该文件并将其添加到应用程序的目标。
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_add_metalview.png" alt=""><figcaption></figcaption></figure>
 
 > 注意：有时 Xcode 不会复制文件，但仍然指向资源目录中的文件。你可能更愿意将文件复制到项目代码目录，然后从那里添加文件。
 
@@ -41,7 +41,7 @@ VStack {
 
 你将看到托管的 MTKView。使用 SwiftUI 的优势在于，在 Metal 视图下分层 UI 元素(例如此处的“Hello Metal”文本)相对容易。
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_mtkview.png" alt=""><figcaption></figcaption></figure>
 
 现在你可以选择。你可以子类化 `MTKView`，并用子类化后的 `MTKView` 替换 `MetalView` 中的 `MTKView`。在这种情况下，子类的 `draw(_:)` 会在每一帧中被调用，你可以将绘图代码放在该方法中。
 

@@ -6,7 +6,7 @@
 
 下图展示了CPU和GPU之间的主要区别。
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_3_gpu_cup.png" alt=""><figcaption></figcaption></figure>
 
 CPU 拥有大型缓存和少量算术逻辑单元(ALU)核心。相比之下，GPU 拥有小型缓存和许多 ALU 核心。CPU 上的低延迟缓存用于快速访问临时资源。GPU 上的 ALU 核心处理计算，而无需将部分结果保存到内存中。
 
@@ -14,7 +14,7 @@ CPU 通常只有几个核心，而 GPU 有数百甚至数千个核心。有了�
 
 除了精简之外，GPU 核心还具有用于处理几何图形的特殊电路，通常称为着色器核心(Shader Cores)。这些着色器核心负责你在屏幕上看到的漂亮颜色。GPU 一次写入整个帧以适应整个渲染窗口；然后它继续尽快渲染下一帧，因此它可以保持可观的帧速率。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_3_gpu_cup_2.png" alt=""><figcaption></figcaption></figure>
 
 CPU 持续向 GPU 发出命令，确保 GPU 始终有工作要做。但是，在某个时刻，要么 CPU 完成发送命令，要么 GPU 完成处理命令。为了避免停滞，CPU 上的 Metal 会在命令缓冲区中排队多个命令，并按顺序为下一帧发出新命令，而无需等待 GPU 完成前一帧。这意味着无论谁先完成工作，总会有更多的工作要做。
 

@@ -4,7 +4,7 @@
 
 Metal 比 OpenGL 有一个很大的优势，因为你可以预先实例化一些对象，而不是在每一帧中创建它们。下图显示了你可以在应用程序启动时创建的一些 Metal 对象。
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_metal_object.png" alt=""><figcaption></figcaption></figure>
 
 * `MTLDevice`：对 GPU 硬件设备的软件引用。
 * `MTLCommandQueue`：负责每帧创建和组织 `MTLCommandBuffers`。

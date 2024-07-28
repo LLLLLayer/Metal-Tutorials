@@ -2,7 +2,7 @@
 
 3D 模型由顶点组成。每个顶点使用 x、y 和 z 值表示 3D 空间中的一个点。
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_coordinate.png" alt=""><figcaption></figcaption></figure>
 
 正你你在上一章中看到的，你将这些顶点发送到 GPU 进行渲染。你需要三个顶点来创建一个三角形，而 GPU 能够高效地渲染三角形。为了显示较小的细节，3D 模型还可以使用纹理。你将在第 8 节“纹理”中了解有关纹理的更多信息。
 
@@ -10,11 +10,11 @@
 
 此 Playground 包含两个页面，分别名为“渲染和导出 3D 模型”和“导入火车”，以及 USDZ 格式的火车模型。如果你没有看到这些项目，你需要使用左上角的图标隐藏/显示项目导航器。
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_playground.png" alt=""><figcaption></figcaption></figure>
 
 要显示文件扩展名，请打开 Xcode Settings，然后在 General Tab 上，选择 File Extensions: Show All
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_xcode_setting.png" alt=""><figcaption></figcaption></figure>
 
 ➤ 从项目导航器中选择“渲染并导出 3D 模型”。
 
@@ -32,7 +32,7 @@ renderEncoder.setTriangleFillMode(.lines)
 
 ➤ 运行 Playground：
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_fill_line.png" alt=""><figcaption></figcaption></figure>
 
 这里出现了一点视觉错觉。虽然看起来可能不像，但 GPU 渲染的是直线。球体边缘看起来弯曲的原因在于 GPU 渲染的三角形数量。如果渲染的三角形较少，弯曲的模型看起来会“块状”。
 
@@ -40,7 +40,7 @@ renderEncoder.setTriangleFillMode(.lines)
 
 在 Blender 或 Maya 等 3D 应用中，你通常会操作点、线和面。点是顶点；线(也称为边)是顶点之间的线；面是三角形的平坦区域。
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_triangle.png" alt=""><figcaption></figcaption></figure>
 
 顶点通常被排列成三角形，因为 GPU 硬件专门用于处理它们。GPU 的核心指令期望看到一个三角形。在所有可能的形状中，为什么是三角形？
 

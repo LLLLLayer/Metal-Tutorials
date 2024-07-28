@@ -14,7 +14,7 @@
 
 扫描算法确定线段上的所有点或三角形内的所有点是否可见，在这种情况下，三角形将完全填充颜色。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_rasterization.png" alt=""><figcaption></figcaption></figure>
 
 对于移动设备，光栅化利用 PowerVR GPU 的平铺架构，并行光栅化 32x32 平铺网格上的图元。在这种情况下，32 是分配给平铺的屏幕像素数，但这个大小完全符合 USC 中的核心数。
 

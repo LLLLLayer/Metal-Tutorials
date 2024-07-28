@@ -27,7 +27,7 @@ vertex float4 vertex_main(const VertexIn vertexIn [[stage_in]]) {
 
 一旦顶点处理完成，就会清除缓存以准备下一批顶点。此时，顶点现在已排序和分组，准备发送到图元组装阶段。
 
-<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1_3_mtlbuffer.png" alt=""><figcaption></figcaption></figure>
 
 回顾一下，CPU 向 GPU 发送了你从模型网格创建的顶点缓冲区。你使用顶点描述符配置了顶点缓冲区，该描述符告诉 GPU 顶点数据的结构。在 GPU 上，你创建了一个结构来封装顶点属性。顶点着色器将此结构作为函数参数接收，并通过 \[\[stage\_in]] 限定符确认位置来自 CPU，通过顶点缓冲区中的 \[\[attribute(0)]] 位置。然后，顶点着色器处理所有顶点并将它们的位置作为 float4 返回。
 

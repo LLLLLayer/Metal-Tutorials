@@ -2,7 +2,7 @@
 
 前一阶段将处理过的顶点分组为数据块发送到此阶段。需要记住的重要一点是，属于同一几何形状(图元)的顶点始终位于同一块中。这意味着一个点的一个顶点、一条线的两个顶点或一个三角形的三个顶点将始终位于同一块中，因此无需第二次块提取。
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/i_3_primitive_assembly.png" alt=""><figcaption></figcaption></figure>
 
 除了顶点之外，CPU 在发出绘制调用命令时还会发送顶点连接信息，如下所示：&#x20;
 
@@ -19,7 +19,7 @@ renderEncoder.drawIndexedPrimitives(
 
 Metal API 提供五种基元类型：
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_primitive_type.png" alt=""><figcaption></figcaption></figure>
 
 * point：对于每个顶点，栅格化一个点。你可以在顶点着色器中指定具有属性 \[\[point\_size]] 的点的大小。
 * line：对于每对顶点，栅格化它们之间的一条线。如果顶点已经包含在一条线中，则不能再次包含在其他线中。如果顶点数量为奇数，则忽略最后一个顶点。
@@ -33,7 +33,7 @@ Metal API 提供五种基元类型：
 
 但是，如果它们只是部分在屏幕外，它们将被剪裁。
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_cropping.png" alt=""><figcaption></figcaption></figure>
 
 为了提高效率，你应该在管道状态下设置缠绕顺序并启用背面剔除。
 

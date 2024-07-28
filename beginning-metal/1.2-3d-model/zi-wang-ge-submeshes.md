@@ -2,13 +2,13 @@
 
 到目前为止，你的原始球体和圆锥体模型仅包含一个材料组，因此只有一个子网格。这是一个具有四个顶点和两个材料组的平面。
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_submeshes.png" alt=""><figcaption></figcaption></figure>
 
 当 Model I/O 加载此平面时，它会将四个顶点放置在 `MTLBuffer` 中。下图显示了顶点位置数据以及两个子网格缓冲区如何索引顶点数据。
 
 
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_submeshes_2.png" alt=""><figcaption></figcaption></figure>
 
 第一个子网格缓冲区保存浅色三角形 ACD 的顶点索引。这些索引指向顶点 0、2 和 3。第二个子网格缓冲区保存深色三角形 ADB 的索引。子网格还具有子网格缓冲区开始的偏移量。索引可以保存在 uint16 或 uint32 中。第二个子网格缓冲区的偏移量将是 uint 类型大小的三倍。
 
@@ -52,6 +52,6 @@ for submesh in mesh.submeshes {
 
 ➤ 运行 Playground，你的火车将完全渲染 - 减去材质颜色，你将在第 11 节“图和材质”中处理这些颜色。
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_train_3.png" alt=""><figcaption></figcaption></figure>
 
 恭喜！你现在正在渲染 3D 模型。现在，不必担心你只在二维中渲染它们或颜色不正确。在下一节之后，你将了解有关渲染内部的更多信息。接下来，你将学习如何将这些顶点移动到第三维。

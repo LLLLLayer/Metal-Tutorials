@@ -8,7 +8,7 @@
 
 ➤ 构建并运行应用程序，你将看到一个精美渲染的红色立方体：
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_cube.png" alt=""><figcaption></figcaption></figure>
 
 请注意立方体不是正方形。请记住，Metal 使用 X 轴上从 -1 到 1 的标准化设备坐标 (NDC)。调整窗口大小，立方体将保持相对于窗口大小的大小。在第 6 节“坐标空间”中，你将学习如何在屏幕上精确定位对象。
 

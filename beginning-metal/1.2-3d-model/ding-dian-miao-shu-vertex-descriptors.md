@@ -4,7 +4,7 @@ Metal 使用描述符作为创建对象的通用模式。你在上一章中设�
 
 下图描述了模型顶点数据的传入缓冲区。它有两个顶点，具有位置、法线和纹理坐标属性。顶点描述符告知 Metal 你希望如何查看这些数据。
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_vertex_descriptors.png" alt=""><figcaption></figcaption></figure>
 
 ➤ 在刚刚添加的代码下方添加此代码：
 
@@ -69,7 +69,7 @@ let mdlMesh =
 
 ➤ 运行 Playground 以查看火车的线框。
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1_2_wheel.png" alt=""><figcaption></figcaption></figure>
 
 嗯，这不太好。火车车轮离地面太高了。另外，火车的其余部分也丢失了！是时候解决这些问题了，从火车的车轮开始。
 

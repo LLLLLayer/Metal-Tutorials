@@ -2,7 +2,7 @@
 
 现在是快速回顾管道的时间了。
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_pipline.png" alt=""><figcaption></figcaption></figure>
 
 * 顶点提取(Vertex Fetch)单元从内存中抓取顶点并将其传递给调度单元。
 * 调度(Scheduler)单元知道哪些着色器核心可用，因此它会在它们上分配工作。
@@ -15,7 +15,7 @@
 
 片段处理阶段是另一个可编程阶段。你可以创建一个片段着色器函数，该函数将接收顶点函数输出的光照、纹理坐标、深度和颜色信息。片段着色器输出是该片段的单一颜色。每个片段都会影响帧缓冲区中最终像素的颜色。所有属性都是针对每个片段进行插值的。
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1_3_pipline_2.png" alt=""><figcaption></figcaption></figure>
 
 例如，要渲染这个三角形，顶点函数将处理三个顶点，颜色分别为红色、绿色和蓝色。如图所示，组成这个三角形的每个片段都是从这三种颜色中插值的。线性插值只是平均两个端点之间线上每个点的颜色。如果一个端点是红色，另一个是绿色，那么它们之间线上的中点将是黄色。依此类推。
 
