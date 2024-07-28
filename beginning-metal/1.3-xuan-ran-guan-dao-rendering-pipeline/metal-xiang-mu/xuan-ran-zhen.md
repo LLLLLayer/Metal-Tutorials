@@ -1,6 +1,6 @@
 # 渲染帧
 
-MTKView 为每个帧调用 `draw(in:)`；您将在此处设置 GPU 渲染命令。
+MTKView 为每个帧调用 `draw(in:)`；你将在此处设置 GPU 渲染命令。
 
 ➤ 在 draw(in:) 中，将 print 语句替换为：
 

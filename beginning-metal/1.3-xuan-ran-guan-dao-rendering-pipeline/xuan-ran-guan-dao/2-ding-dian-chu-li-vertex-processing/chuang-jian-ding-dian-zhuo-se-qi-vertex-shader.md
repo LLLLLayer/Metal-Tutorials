@@ -18,14 +18,14 @@ vertex float4 vertex_main(const VertexIn vertexIn [[stage_in]]) {
 
 查看代码：
 
-1. 创建一个 struct VertexIn 来描述与你之前设置的顶点描述符匹配的顶点属性。在本例中，只需定位即可。
+1. 创建一个 struct VertexIn 来描述与你之前设置的顶点描述符匹配的顶点属性。在本例中，只需位置即可。
 2. 实现一个顶点着色器 vertex\_main，它接收 VertexIn 结构并以 float4 类型返回顶点位置。
 
 请记住，顶点在顶点缓冲区中编入索引。顶点着色器通过 \[\[stage\_in]] 属性获取当前顶点索引，并解压当前索引处为顶点缓存的 VertexIn 结构。
 
 计算单元可以(一次)处理顶点批次，直至其最大着色器核心数。此批次可以完全放入 CU 缓存中，因此可以根据需要重复使用顶点。批次将使 CU 保持繁忙状态，直到处理完成，但其他 CU 应该可用于处理下一批。
 
-一旦顶点处理完成，就会清除下一批顶点的缓存。此时，顶点现在已排序和分组，准备发送到原始组装阶段。
+一旦顶点处理完成，就会清除缓存以准备下一批顶点。此时，顶点现在已排序和分组，准备发送到图元组装阶段。
 
 <figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
@@ -33,5 +33,5 @@ vertex float4 vertex_main(const VertexIn vertexIn [[stage_in]]) {
 
 > 注意：当你使用带有属性的顶点描述符时，你不必匹配类型。MTLBuffer 位置是 float3，而 VertexIn 将位置定义为 float4。
 
-称为分发器的特殊硬件单元将分组的顶点块发送到原始组装阶段。
+称为分发器(Distributer)的特殊硬件单元将分组的顶点块发送到图元组装阶段。
 

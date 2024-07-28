@@ -1,6 +1,6 @@
 # 创建网格
 
-您已经使用 Model I/O 创建了一个球体和一个圆锥体；现在是时候创建一个立方体了。
+你已经使用 Model I/O 创建了一个球体和一个圆锥体；现在是时候创建一个立方体了。
 
 ➤ 在 `init(metalView:)` 中，在调用 `super.init()` 之前，添加以下内容：
 
@@ -28,4 +28,4 @@ do {
 vertexBuffer = mesh.vertexBuffers[0].buffer
 ```
 
-此代码将网格数据放入 MTLBuffer 中。接下来，您需要设置管道状态，以便 GPU 知道如何渲染数据。
+此代码将网格数据放入 `MTLBuffer` 中。接下来，你需要设置管道状态，以便 GPU 知道如何渲染数据。
